@@ -1,0 +1,212 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: arial;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    header {
+        background-color: #d7dfe0;
+        padding-top: 3px;
+        box-shadow: 0px 6px 20px rgba(128, 128, 128, 0.683);
+    }
+    
+    header .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    header nav ul {
+        display: flex;
+        align-items: center;
+    }
+    
+    header nav ul a {
+        color: black;
+        font-weight: 600;
+        padding: 20px 0;
+        border-bottom: 3px solid #d7dfe0;
+    }
+    
+    header .logo {
+        margin-right: 100px;
+    }
+    
+    header nav ul a:not(.contact) {
+        margin-right: 50px;
+    }
+    
+    header nav ul a:hover {
+        border-bottom: 3px solid black;
+    }
+    /* info style */
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 400px;
+    }
+    
+    .main-head {
+        margin-top: 10px;
+        padding: 20px;
+    }
+    
+    .main-head2 {
+        padding: 20px;
+        margin-top: -33px;
+    }
+    
+    .main-navbar {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 20px 50px;
+        margin-left: -100px;
+    }
+    
+    .navoption {
+        background-color: #EFFFFD;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 1px;
+    }
+    
+    .active {
+        background-color: #42C2FF !important;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .active a {
+        color: black !important;
+    }
+    
+    .navoption a {
+        text-decoration: none;
+        color: #bfbebe;
+        font-weight: 600;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 80%;
+        height: 500px;
+        align-items: center;
+        margin: auto;
+        box-shadow: 0px 6px 20px rgba(128, 128, 128, 0.683);
+        margin-bottom: 200px;
+        border-left: 6px solid #42C2FF;
+        border-radius: 3px;
+    }
+    
+    .info img {
+        width: 35%;
+        height: 60%;
+        margin: auto;
+    }
+    
+    .info .form {
+        width: 60%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        display: grid;
+        justify-items: center;
+    }
+    
+    .info .form .inputs {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 1.5rem;
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+    
+    .info .form .inputs p {
+        margin-left: 7%;
+        margin-right: 20%;
+        font-family: arial;
+        font-weight: bold;
+        float: left;
+    }
+    
+    .info .form .inputs .input {
+        box-sizing: border-box;
+        border: 1px solid #42C2FF;
+        outline: none;
+        width: 25%;
+        border-radius: 7px;
+        margin-right: 10px;
+        float: right;
+    }
+    
+    #cars {
+        border: 1px solid #42C2FF;
+        border-radius: 3px;
+    }
+    
+    .vehicle {
+        width: 10px;
+        border: 1px solid #42C2FF;
+    }
+    
+    label {
+        margin-right: 15px;
+        margin-left: 5px;
+        font-family: arial;
+        font-weight: bold;
+        color: #42C2FF;
+    }
+    
+    .but {
+        margin: 30px;
+        width: 15%;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        font-family: arial;
+        font-weight: bold;
+        background-color: #42C2FF;
+        cursor: pointer;
+    }
+    
+    .but:hover {
+        background-color: #42c3ffa6;
+    }
+    
+    .inputfile {
+        border-radius: 7px;
+        width: 25%;
+        border: 1px solid #42C2FF;
+        cursor: pointer;
+    }
+    
+    .inputfile::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+    
+    .inputfile::before {
+        content: ' +                    ';
+        color: gray;
+        cursor: pointer;
+    }
